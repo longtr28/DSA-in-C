@@ -3,20 +3,14 @@
 
 using namespace std;
 
-struct Rectangle{
-    int length;
-    int breadth;
-    char x;
-};
-
 int main(){
-    struct Rectangle r1={10,5};
 
-    r1.length=15;
-    r1.breadth=7;
+    int a = 10;
+    int *p;
+    p=&a;
 
-    cout<<r1.length<<endl;
-    cout<<r1.breadth<<endl;
+    cout<<a;
+    printf(" using pointer %d", *p);
 
     return 0;
 }
