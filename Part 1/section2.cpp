@@ -3,12 +3,15 @@
 
 using namespace std;
 
-int main(){
-    int A[10]={2,4,6,8,10,12,14};
+struct Rectangle{
+    int length;
+    int breadth;
+};
 
-    for(int x:A){
-        cout<<x<<endl;
-    }
-    
+int main(){
+    struct Rectangle r1={10,5};
+
+    printf("%d", sizeof(r1));
+
     return 0;
 }
