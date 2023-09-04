@@ -3,19 +3,24 @@
 
 using namespace std;
 
+struct Rectangle{
+    int length;
+    int breadth;
+};
+
 int main(){
 
-    int *p;
-    p=(int *)malloc(5*sizeof(int));
-    //p=new int[5] (equivalent to line 9)
+    int *p1;
+    char *p2;
+    float *p3;
+    double *p4;
+    struct Rectangle *p5;
 
-    p[0]=10; p[1]=15; p[2]=14; p[3]=21; p[4]=31;
-
-    for(int i=0;i<5;i++)
-    cout<<p[i]<<endl;
-
-    delete [ ] p;
-    free(p);
+    cout<<sizeof(p1)<<endl;
+    cout<<sizeof(p2)<<endl;
+    cout<<sizeof(p3)<<endl;
+    cout<<sizeof(p4)<<endl;
+    cout<<sizeof(p5)<<endl;
 
     return 0;
 }
