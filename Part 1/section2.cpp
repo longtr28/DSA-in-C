@@ -4,22 +4,21 @@
 
 using namespace std;
 
-struct Rectangle
+int add(int a, int b)
 {
-    int length;
-    int breadth;
-};
+    int c;
+    c=a+b;
+
+    return c;
+}
 
 int main(){
 
-    Rectangle *p;
-    p=(struct Rectangle *)malloc(sizeof(struct Rectangle));
+    int num1=10,num2=15,sum;
 
-    p->length=15;
-    p->breadth=7;
+    sum=add(num1, num2);
 
-    cout<<p->length<<endl;
-    cout<<p->breadth<<endl;
+    cout<<"Sum is "<<sum;
 
     return 0;
 }
