@@ -12,11 +12,12 @@ struct Rectangle
 
 int main(){
 
-    Rectangle r={10, 5};
-    cout<<r.length<<endl;
-    cout<<r.breadth<<endl;
+    Rectangle *p;
+    p=(struct Rectangle *)malloc(sizeof(struct Rectangle));
 
-    Rectangle *p = &r;
+    p->length=15;
+    p->breadth=7;
+
     cout<<p->length<<endl;
     cout<<p->breadth<<endl;
 
