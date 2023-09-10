@@ -4,21 +4,22 @@
 
 using namespace std;
 
-int add(int a, int b)
+int swap(int *x, int *y)
 {
-    int c;
-    c=a+b;
-
-    return c;
+    int temp;
+    temp = *x;
+    *x = *y;
+    *y = temp;
 }
 
 int main(){
 
-    int num1=10,num2=15,sum;
+    int num1=10,num2=15;
 
-    sum=add(num1, num2);
+    swap(&num1,&num2);
 
-    cout<<"Sum is "<<sum;
+    cout<<"First Number "<<num1<<endl;
+    cout<<"second Number "<<num2<<endl;
 
     return 0;
 }
